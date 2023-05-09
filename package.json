@@ -1,0 +1,58 @@
+{
+  "name": "ahj_11_1_polling_frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint .",
+    "test": "jest",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand",
+    "coverage": "jest --coverage",
+    "doc": "jsdoc -c jsdoc.conf.json",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:doc": "npm run doc",
+    "show:doc": "live-server doc",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
+  },
+  "repository": "https://github.com/AlexWEBArt/ahj_11_1_polling_frontend",
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Serg1811/ahj_11_1_polling_frontend/issues"
+  },
+  "homepage": "https://github.com/Serg1811/ahj_11_1_polling_frontend#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-jest": "^29.5.0",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "eslint": "^8.40.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.1",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "jest-puppeteer": "^8.0.6",
+    "live-server": "^1.1.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "puppeteer": "20.1.2",
+    "terser-webpack-plugin": "^5.3.8",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "core-js": "3",
+    "rxjs": "^7.8.1"
+  }
+}
